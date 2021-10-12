@@ -1,0 +1,127 @@
+EESchema Schematic File Version 4
+LIBS:IR-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "I2C BUS Accelerator"
+Date "2021-08-30"
+Rev "v1.0"
+Comp "Crescent"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L IR-rescue:PINHD-1X4 JP1
+U 1 1 5AD4C1DC
+P 2875 1750
+F 0 "JP1" H 2625 2075 50  0000 L BNN
+F 1 "PINHD-1X4" H 2625 1450 50  0000 L BNN
+F 2 "GroveCon:GROVE" H 2905 1900 20  0001 C CNN
+F 3 "" H 2875 1750 60  0000 C CNN
+	1    2875 1750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L IR-rescue:PINHD-1X4 JP2
+U 1 1 5AD4C208
+P 4525 1750
+F 0 "JP2" H 4275 2075 50  0000 L BNN
+F 1 "PINHD-1X4" H 4275 1450 50  0000 L BNN
+F 2 "GroveCon:GROVE" H 4555 1900 20  0001 C CNN
+F 3 "" H 4525 1750 60  0000 C CNN
+	1    4525 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2975 1550 3250 1550
+Wire Wire Line
+	2975 1650 3250 1650
+Wire Wire Line
+	2975 1750 3250 1750
+Wire Wire Line
+	2975 1850 3250 1850
+Text Label 3250 1550 0    60   ~ 0
+SCL0
+Text Label 3250 1650 0    60   ~ 0
+SDA0
+Text Label 3250 1750 0    60   ~ 0
+3.3V
+Text Label 3250 1850 0    60   ~ 0
+GND
+Wire Wire Line
+	4425 1550 3975 1550
+Wire Wire Line
+	4425 1650 3975 1650
+Wire Wire Line
+	4425 1750 3975 1750
+Wire Wire Line
+	4425 1850 3975 1850
+$Comp
+L Device:C C1
+U 1 1 5AD4C6F4
+P 4575 2575
+F 0 "C1" H 4600 2675 50  0000 L CNN
+F 1 "0.1u" H 4600 2475 50  0000 L CNN
+F 2 "smt:C-0603" H 4613 2425 50  0001 C CNN
+F 3 "" H 4575 2575 50  0000 C CNN
+	1    4575 2575
+	1    0    0    -1  
+$EndComp
+Text Label 3975 1550 0    60   ~ 0
+SCL0
+Text Label 3975 1650 0    60   ~ 0
+SDA0
+Text Label 3975 1750 0    60   ~ 0
+3.3V
+Text Label 3975 1850 0    60   ~ 0
+GND
+Wire Wire Line
+	4025 2425 4575 2425
+Text Label 4100 2875 0    60   ~ 0
+SCL0
+Text Label 4100 3075 0    60   ~ 0
+SDA0
+Text Label 4025 2425 0    60   ~ 0
+3.3V
+Text Label 4575 2800 0    60   ~ 0
+GND
+Wire Wire Line
+	4575 2800 4575 2725
+NoConn ~ 4025 2725
+$Comp
+L ltc4311:LTC4311 U1
+U 1 1 5AE972C0
+P 3400 2775
+F 0 "U1" H 3400 2775 60  0000 C CNN
+F 1 "LTC4311" H 3650 2375 60  0001 C CNN
+F 2 "smt-sot:SC70-6L" H 3400 2775 60  0001 C CNN
+F 3 "" H 3400 2775 60  0000 C CNN
+	1    3400 2775
+	1    0    0    -1  
+$EndComp
+Text Label 4100 2975 0    60   ~ 0
+GND
+Text Label 3200 2875 2    60   ~ 0
+3.3V
+Text Label 3200 2975 2    60   ~ 0
+GND
+$Comp
+L Device:R R1
+U 1 1 5AE974F2
+P 2850 2925
+F 0 "R1" V 2930 2925 50  0000 C CNN
+F 1 "10k" V 2850 2925 50  0000 C CNN
+F 2 "smt:R-0603" V 2780 2925 50  0001 C CNN
+F 3 "" H 2850 2925 50  0000 C CNN
+	1    2850 2925
+	1    0    0    -1  
+$EndComp
+Text Label 2850 2775 2    60   ~ 0
+3.3V
+Wire Wire Line
+	3200 3075 2850 3075
+$EndSCHEMATC

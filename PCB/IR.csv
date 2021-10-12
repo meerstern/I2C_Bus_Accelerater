@@ -1,0 +1,6 @@
+"ID";"参照記号";"パッケージ";"数";"名称";"Supplier and ref";
+1;"REF4,REF3,REF2,REF1";"MountingHole_3mm";4;"MountingHole_3mm";;;
+2;"C1";"C-0603";1;"0.1u";;;
+3;"JP1,JP2";"GROVE";2;"PINHD-1X4";;;
+4;"R1";"R-0603";1;"10k";;;
+5;"U1";"SC70-6L";1;"LTC4311";;;

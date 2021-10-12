@@ -1,0 +1,170 @@
+(pcb D:\01_PCBDesign\03_BreakOut\I2C_BUS_Accelerater_v1.0\IR.dsn
+  (parser
+    (string_quote ")
+    (space_in_quoted_tokens on)
+    (host_cad "KiCad's Pcbnew")
+    (host_version "4.0.1-stable")
+  )
+  (resolution um 10)
+  (unit um)
+  (structure
+    (layer F.Cu
+      (type signal)
+      (property
+        (index 0)
+      )
+    )
+    (layer B.Cu
+      (type signal)
+      (property
+        (index 1)
+      )
+    )
+    (boundary
+      (path pcb 0  180000 -120000  179826 -119985  179658 -119940  179500 -119866
+            179357 -119766  179234 -119643  179134 -119500  179060 -119342
+            179015 -119174  179000 -119000  179000 -101000  179015 -100826
+            179060 -100658  179134 -100500  179234 -100357  179357 -100234
+            179500 -100134  179658 -100060  179826 -100015  180000 -100000
+            198000 -100000  198174 -100015  198342 -100060  198500 -100134
+            198643 -100234  198766 -100357  198866 -100500  198940 -100658
+            198985 -100826  199000 -101000  199000 -119000  198985 -119174
+            198940 -119342  198866 -119500  198766 -119643  198643 -119766
+            198500 -119866  198342 -119940  198174 -119985  198000 -120000
+            180000 -120000  180000 -120000)
+    )
+    (via "Via[0-1]_800:400_um")
+    (rule
+      (width 300)
+      (clearance 200.1)
+      (clearance 200.1 (type default_smd))
+      (clearance 50 (type smd_smd))
+    )
+  )
+  (placement
+    (component Mounting_Holes:MountingHole_3mm
+      (place REF4 181500 -117500 front 0 (PN MountingHole_3mm))
+      (place REF3 196500 -117500 front 0 (PN MountingHole_3mm))
+      (place REF2 196500 -102500 front 0 (PN MountingHole_3mm))
+      (place REF1 181500 -102500 front 0 (PN MountingHole_3mm))
+    )
+    (component "smt:C-0603"
+      (place C1 185500 -103000 front 270 (PN 0.1u))
+      (place R1 192000 -103000 front 270 (PN 10k))
+    )
+    (component GroveCon:GROVE
+      (place JP1 185500 -113000 front 90 (PN "PINHD-1X4"))
+      (place JP2 192000 -107000 front 270 (PN "PINHD-1X4"))
+    )
+    (component "smt-sot:SC70-6L"
+      (place U1 188750 -103000 front 270 (PN LTC4311))
+    )
+  )
+  (library
+    (image Mounting_Holes:MountingHole_3mm
+      (outline (path signal 381  3000 0  2853.17 -927.051  2427.05 -1763.36  1763.36 -2427.05
+            927.051 -2853.17  0 -3000  -927.051 -2853.17  -1763.36 -2427.05
+            -2427.05 -1763.36  -2853.17 -927.051  -3000 0  -2853.17 927.051
+            -2427.05 1763.36  -1763.36 2427.05  -927.051 2853.17  0 3000
+            927.051 2853.17  1763.36 2427.05  2427.05 1763.36  2853.17 927.051))
+      (keepout "" (circle F.Cu 3000))
+      (keepout "" (circle B.Cu 3000))
+    )
+    (image "smt:C-0603"
+      (outline (path signal 50  -762 381  762 381))
+      (outline (path signal 50  762 381  762 -381))
+      (outline (path signal 50  762 -381  -762 -381))
+      (outline (path signal 50  -762 -381  -762 381))
+      (outline (path signal 50  -1778 889  1778 889))
+      (outline (path signal 50  1778 889  1778 -889))
+      (outline (path signal 50  1778 -889  -1778 -889))
+      (outline (path signal 50  -1778 -889  -1778 889))
+      (outline (path signal 180  -1778 889  1778 889))
+      (outline (path signal 180  1778 889  1778 -889))
+      (outline (path signal 180  1778 -889  -1778 -889))
+      (outline (path signal 180  -1778 -889  -1778 889))
+      (pin Rect[T]Pad_1100x1000_um 1 -850 0)
+      (pin Rect[T]Pad_1100x1000_um 2 850 0)
+    )
+    (image GroveCon:GROVE
+      (outline (path signal 150  5000 -1500  5000 -1000))
+      (outline (path signal 150  5000 -1000  1000 -1000))
+      (outline (path signal 150  1000 -1000  1000 -1500))
+      (outline (path signal 150  3000 -1500  -1500 -1500))
+      (outline (path signal 150  -1500 -1500  -1500 1500))
+      (outline (path signal 150  -1500 1500  7500 1500))
+      (outline (path signal 150  7500 1500  7500 -1500))
+      (outline (path signal 150  7500 -1500  3000 -1500))
+      (pin Oval[A]Pad_1524x1800_um 1 0 0)
+      (pin Oval[A]Pad_1524x1800_um 2 2000 0)
+      (pin Oval[A]Pad_1524x1800_um 3 4000 0)
+      (pin Oval[A]Pad_1524x1800_um 4 6000 0)
+    )
+    (image "smt-sot:SC70-6L"
+      (outline (path signal 150  -1000 -300  -1000 625))
+      (outline (path signal 150  1000 -625  -600 -625))
+      (outline (path signal 150  1000 625  1000 -625))
+      (outline (path signal 150  -1000 625  1000 625))
+      (outline (path signal 200  -800 -1800  -804.894 -1830.9  -819.098 -1858.78  -841.221 -1880.9
+            -869.098 -1895.11  -900 -1900  -930.902 -1895.11  -958.779 -1880.9
+            -980.902 -1858.78  -995.106 -1830.9  -1000 -1800  -995.106 -1769.1
+            -980.902 -1741.22  -958.779 -1719.1  -930.902 -1704.89  -900 -1700
+            -869.098 -1704.89  -841.221 -1719.1  -819.098 -1741.22  -804.894 -1769.1))
+      (outline (path signal 200  -1200 900  -1200 -900))
+      (outline (path signal 200  1200 900  1200 -900))
+      (outline (path signal 150  -600 -625  -1000 -300))
+      (pin Rect[T]Pad_400x850_um 1 -650 -925)
+      (pin Rect[T]Pad_400x850_um 2 0 -925)
+      (pin Rect[T]Pad_400x850_um 3 650 -925)
+      (pin Rect[T]Pad_400x850_um 5 0 925)
+      (pin Rect[T]Pad_400x850_um 4 650 925)
+      (pin Rect[T]Pad_400x850_um 6 -650 925)
+    )
+    (padstack Oval[A]Pad_1524x1800_um
+      (shape (path F.Cu 1524  0 -138  0 138))
+      (shape (path B.Cu 1524  0 -138  0 138))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_400x850_um
+      (shape (rect F.Cu -200 -425 200 425))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_1100x1000_um
+      (shape (rect F.Cu -550 -500 550 500))
+      (attach off)
+    )
+    (padstack "Via[0-1]_800:400_um"
+      (shape (circle F.Cu 800))
+      (shape (circle B.Cu 800))
+      (attach off)
+    )
+  )
+  (network
+    (net /3.3V
+      (pins C1-1 JP1-3 JP2-3 R1-1 U1-1)
+    )
+    (net /GND
+      (pins C1-2 JP1-4 JP2-4 U1-2 U1-5)
+    )
+    (net /SCL0
+      (pins JP1-1 JP2-1 U1-6)
+    )
+    (net /SDA0
+      (pins JP1-2 JP2-2 U1-4)
+    )
+    (net "Net-(R1-Pad2)"
+      (pins R1-2 U1-3)
+    )
+    (class kicad_default "" /3.3V /GND /SCL0 /SCL1 /SDA0 /SDA1 "Net-(R1-Pad2)"
+      (circuit
+        (use_via Via[0-1]_800:400_um)
+      )
+      (rule
+        (width 300)
+        (clearance 200.1)
+      )
+    )
+  )
+  (wiring
+  )
+)
