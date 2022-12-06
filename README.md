@@ -19,8 +19,12 @@ I2C(Grove) adapter with a bus accelerater IC, LTC4311
   * 本基板は目安として数m~10m程度までの延長に向いています  
   * 数10m以上延長する場合は高ドライブ電流バスバッファPCA9600D等が最適です  
    
+## 販売サイト
+  * [スイッチサイエンス][2] 
+  
 <img src="https://raw.githubusercontent.com/meerstern/I2C_Bus_Accelerator/master/IMG/img1.jpg" width="360">  
 <img src="https://raw.githubusercontent.com/meerstern/I2C_Bus_Accelerator/master/IMG/img2.jpg" width="360">  
    
    
  [1]: https://www.analog.com/jp/products/ltc4311.html "*1"
+ [2]: https://www.switch-science.com/products/7560
